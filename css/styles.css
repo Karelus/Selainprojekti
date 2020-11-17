@@ -1,0 +1,25 @@
+
+input[type=text] {
+    padding:10px;
+    margin:10px 0;
+    border:0;
+    box-shadow:0 0 15px 4px rgba(0,0,0,0.06);
+}
+
+input[type=submit] {
+    padding:10px;
+    border:none;
+    background-color:#3F51B5;
+    color:#fff;
+    font-weight:600;
+    border-radius:5px;
+}
+
+.header {
+    padding: 60px;
+    text-align: center;
+    background: #4AB2B5;
+    color: white;
+    font-size: 30px;
+    font-weight: bold;
+  }
