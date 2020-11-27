@@ -1,0 +1,9 @@
+[
+    {
+        "name": "Studio",
+        "rooms": [
+            { "name": "living room", "size": 15, "typeFactor": 1.3},
+            { "name": "kitchen", "size": 6, "typeFactor": 1.0}
+        ]
+    }
+]

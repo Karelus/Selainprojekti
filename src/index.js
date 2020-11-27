@@ -3,7 +3,7 @@ import ReactDOM from "react-dom";
 
 class Test extends React.Component {
     render() {
-        return <h1>Render testing</h1>;
+        return <h1>Render Testing</h1>;
     }
 }
 
