@@ -1,17 +1,14 @@
 import React from "react";
+import Apartment from "./Apartment";
 
 const HousingCooperative = ({ apartments = [], paint }) => {
-
     return (
         <section>
-            <h1>Apartments</h1>
+            <h1>Apartments:</h1>
             <div className="apartments">
-                <ul>
-                    <li>1</li>
-                    <li>2</li>
-                    <li>3</li>
-                    <li>4</li>
-                </ul>
+                {apartments.map((apartment, i) => {
+                    return <Apartment key={i} {...apartment} paint={paint} />
+                })}
             </div>
         </section>
     )

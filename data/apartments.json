@@ -5,5 +5,13 @@
             { "name": "living room", "size": 15, "typeFactor": 1.3},
             { "name": "kitchen", "size": 6, "typeFactor": 1.0}
         ]
+    },
+    {
+        "name": "Flat",
+        "rooms": [
+            { "name": "living room", "size": 15, "typeFactor": 1.3},
+            { "name": "kitchen", "size": 8, "typeFactor": 1.0},
+            { "name": "bedroom", "size": 6, "typeFactor": 1.3}
+        ]
     }
 ]

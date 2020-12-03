@@ -12,23 +12,16 @@ const formReducer = (state, event) => {
 
 function Form() {
     const [formData, setFormData] = useReducer(formReducer, {});
-    const [submitting, setSubmitting] = useState(false);
 
     const handleSubmit = event => {
         event.preventDefault();
-        setSubmitting(true);
-
-        setTimeout(() => {
-            setSubmitting(false);
-        }, 3000)
 
         var paint = {
-            name: event.target.name.value,
-            price: event.target.price.value,
-            coverage: event.target.coverage.value,
-            count: event.target.count.value
+            paintName: event.target.name.value,
+            paintPrice: event.target.price.value,
+            paintCoverage: event.target.coverage.value,
+            paintCount: event.target.count.value
         }
-
         renderResults(paint);
     }
 
@@ -43,27 +36,18 @@ function Form() {
         <div className="wrapper">
             <h1>Maalilaskuri</h1>
             <h2>asunto-osakeyhtiölle</h2>
-            {submitting && 
-            <div>
-                You are submitting the following:
-                <ul>
-                    {Object.entries(formData).map(([name, value]) => (
-                        <li key={name}><strong>{name}</strong>: {value.toString()}</li>
-                    ))}
-                </ul>
-            </div>
-            }
+
             <form onSubmit={handleSubmit}>
                 <label>
                     <p>Maalin nimi</p>
                     <input name="name" onChange={handleChange} />
                 </label>
                 <label>
-                    <p>Maalin hinta</p>
+                    <p>Maalin hinta(€/l):</p>
                     <input name="price" onChange={handleChange} />
                 </label>
                 <label>
-                    <p>Maalin riittoisuus</p>
+                    <p>Maalin riittoisuus(m2/l)</p>
                     <input name="coverage" onChange={handleChange} />
                 </label>
                 <label>
@@ -76,6 +60,7 @@ function Form() {
                     </select>
                 </label>
                 <br></br>
+                <br></br>
                 <button type="submit>">Submit</button>
             </form>
         </div>
@@ -83,7 +68,9 @@ function Form() {
 }
 
 function renderResults(paint) {
-    console.log(paint)
+    console.log(paint);
+    typeof paint;
+    console.log(typeof paint);
     ReactDOM.render(<HousingCooperative apartments={data} paint={paint} />, document.getElementById("result-root"));
 }
 
