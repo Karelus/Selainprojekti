@@ -9,38 +9,10 @@
 
 <body>
 
-    <div class="header">
-        <h1>Maalilaskuri</h1>
-        <h2>asunto-osakeyhtiöille</h2>
-    </div><br>
-
-
-    <!--Form for collecting paint's information from user-->
-    <form>
-        <label for="paintName">Maalin nimi:</label><br>
-        <input id="paintName" type="text" name="paintName" required><br>
-
-        <label for="paintPrice">Maalin hinta(euroa/l):</label><br>
-        <input id="paintPrice" type="text" name="paintPrice" required><br>
-
-        <label for="paintCoverage">Maalin riittoisuus(m2/l):</label><br>
-        <input id="paintCoverage" type="text" name="paintCoverage" required><br>
-
-        <label for="paintCount">Montako kertaa pinnat maalataan?:</label><br>
-        <input type="radio" id="once" name="pntCount" value="once">
-        <label for="once">1</label><br>
-        <input type="radio" id="twice" name="pntCount" value="twice">
-        <label for="twice">2</label><br>
-        <input type="radio" id="thrice" name="pntCount" value="thrice">
-        <label for="thrice">3</label><br><br>
-
-        <input type="submit" value="Hyväksy"><br>
-    </form>
-
     <!--This is for the results that come from ReactDOM-->
     <div id="root"></div>
+    <div id="result-root"></div>
     <script src="assets/bundle.js"></script>
 
-    
 </body>
 </html>
