@@ -16,6 +16,7 @@ const Apartment = ({ name, rooms, paint }) => {
                             return <Room key={i} {...room} {...paint} />
                         })}
                     </fieldset>
+                    <p>Total cost: x </p>
                 </div>
         </div>
     )
