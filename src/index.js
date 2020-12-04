@@ -40,19 +40,19 @@ function Form() {
 
             <form onSubmit={handleSubmit}>
                 <label>
-                    <p>Maalin nimi</p>
+                    <p>Maalin nimi: </p>
                     <input name="name" onChange={handleChange} />
                 </label>
                 <label>
-                    <p>Maalin hinta(€/l):</p>
+                    <p>Maalin hinta (€/l): </p>
                     <input name="price" onChange={handleChange} />
                 </label>
                 <label>
-                    <p>Maalin riittoisuus(m2/l)</p>
+                    <p>Maalin riittoisuus (m2/l): </p>
                     <input name="coverage" onChange={handleChange} />
                 </label>
                 <label>
-                    <p>Montako kertaa pinnat maalataan</p>
+                    <p>Montako kertaa pinnat maalataan: </p>
                     <select name="count" onChange={handleChange}>
                         <option value="">--Valitse määrä--</option>
                         <option value="1">1</option>
