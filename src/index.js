@@ -35,24 +35,24 @@ function Form() {
 
     return (
         <div className="wrapper">
-            <h1>Maalilaskuri</h1>
-            <h2>asunto-osakeyhtiölle</h2>
+            <h1>Paint Counter</h1>
+            <h2>Housing Cooperative</h2>
 
             <form onSubmit={handleSubmit}>
                 <label>
-                    <p>Maalin nimi: </p>
+                    <p>Paint name: </p>
                     <input name="name" onChange={handleChange} />
                 </label>
                 <label>
-                    <p>Maalin hinta (€/l): </p>
+                    <p>Price of paint (€/l): </p>
                     <input name="price" onChange={handleChange} />
                 </label>
                 <label>
-                    <p>Maalin riittoisuus (m2/l): </p>
+                    <p>Paint abundance (m2/l): </p>
                     <input name="coverage" onChange={handleChange} />
                 </label>
                 <label>
-                    <p>Montako kertaa pinnat maalataan: </p>
+                    <p>Number of layers applied: </p>
                     <select name="count" onChange={handleChange}>
                         <option value="">--Valitse määrä--</option>
                         <option value="1">1</option>

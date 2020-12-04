@@ -4,7 +4,7 @@ import Apartment from "./Apartment";
 const HousingCooperative = ({ apartments = [], paint }) => {
     return (
         <section>
-            <h1>Apartments:</h1>
+            <h5>Apartments:</h5>
             <div className="apartments">
                 {apartments.map((apartment, i) => {
                     return <Apartment key={i} {...apartment} paint={paint} />
