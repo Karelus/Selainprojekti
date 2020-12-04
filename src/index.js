@@ -2,6 +2,7 @@ import React, { useReducer, useState } from "react";
 import ReactDOM from "react-dom";
 import data from "../data/apartments.json";
 import HousingCooperative from "./components/HousingCooperative";
+import "../dist/css/styles.css";
 
 const formReducer = (state, event) => {
     return {
