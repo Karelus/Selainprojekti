@@ -53,7 +53,7 @@ function Form() {
                 </label>
                 <label>
                     <p>Number of layers applied: </p>
-                    <select name="count" onChange={handleChange}>
+                    <select name="count" className="selectMenu" onChange={handleChange}>
                         <option value="">--Valitse määrä--</option>
                         <option value="1">1</option>
                         <option value="2">2</option>
@@ -62,7 +62,7 @@ function Form() {
                 </label>
                 <br></br>
                 <br></br>
-                <button type="submit>">Submit</button>
+                <button type="submit>" className="submitButton">Submit</button>
             </form>
         </div>
     )

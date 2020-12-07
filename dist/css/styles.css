@@ -7,7 +7,7 @@ input {
     background-color: rgb(255, 255, 255);
 }
 
-input[type=submit] {
+.submitButton {
     padding:10px;
     border:none;
     background-color:#3F51B5;
@@ -46,4 +46,12 @@ h5 {
 
 html {
     background: #d3eeff;
+}
+
+.selectMenu {
+    padding:10px;
+    margin:10px 0;
+    border:10px black;
+    box-shadow:0 0 15px 4px rgba(0, 0, 0, 0.7);
+    background-color: rgb(255, 255, 255);
 }
