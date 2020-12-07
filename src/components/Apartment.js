@@ -16,8 +16,8 @@ const Apartment = ({ name, rooms, paint }) => {
                             return <Room key={i} {...room} {...paint} />
                         })}
                     </fieldset>
-                    <p>Total cost: {Math.round((totalCost * 100) / 100)}€ </p>
-                    <p>Total paint needed: {Math.round(totalLitersNeeded * 100) / 100} </p>
+                    <p>Total cost: </p>
+                    <p>Total paint needed: </p>
                 </div>
         </div>
     )
