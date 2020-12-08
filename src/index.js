@@ -35,8 +35,8 @@ function Form() {
 
     return (
         <div className="wrapper">
-            <h1>Paint Counter</h1>
-            <h2>Housing Cooperative</h2>
+            <h1>Counter for paint price and liters</h1>
+            <h2>Add paint info:</h2>
 
             <form onSubmit={handleSubmit}>
                 <label>
