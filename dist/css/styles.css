@@ -35,6 +35,24 @@ h2 {
     font-weight: bold;
 }
 
+h3 {
+    font-family: "Times New Roman", Times, serif;
+    color: rgb(0, 0, 0);
+    padding: 5;
+    text-align: left;
+    font-size: 15;
+    font-weight: Medium;
+}
+
+h4 {
+    font-family: "Times New Roman", Times, serif;
+    color: rgb(0, 0, 0);
+    padding: 5;
+    text-align: left;
+    font-size: 15;
+    font-weight: Medium;
+}
+
 h5 {
     font-family: "Times New Roman", Times, serif;
     color: rgb(0, 0, 0);
@@ -42,6 +60,13 @@ h5 {
     text-align: left;
     font-size: 30px;
     font-weight: bold;
+}
+
+p {
+    font-family: 'Times New Roman', Times, serif;
+    color: rgb(0, 0, 0);
+    font-size: 20px;
+    font-weight: 300;
 }
 
 html {
