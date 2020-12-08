@@ -69,9 +69,6 @@ function Form() {
 }
 
 function renderResults(paint) {
-    console.log(paint);
-    typeof paint;
-    console.log(typeof paint);
     ReactDOM.render(<HousingCooperative apartments={data} paint={paint} />, document.getElementById("result-root"));
 }
 

@@ -1,26 +1,25 @@
-import React from "react";
+import React, { useState } from "react";
 import Room from "./Room";
 
 // make the apartment element here
 const Apartment = ({ name, rooms, paint }) => {
-    console.log(name);
-    console.log(rooms);
-    console.log(paint);
+
     return (
         <div>
-            <h3>{name}</h3>
-            <h4>Rooms:</h4>
+            <fieldset>
+                <h3>{name}</h3>
+                <h4>Rooms:</h4>
                 <div className="rooms">
-                    <fieldset>
-                        {rooms.map((room, i) => {
-                            return <Room key={i} {...room} {...paint} />
-                        })}
-                    </fieldset>
-                    <p>Total cost: </p>
-                    <p>Total paint needed: </p>
+                    {rooms.map((room, i) => {
+                        return <Room key={i} {...room} {...paint} />
+                    })}
+                    <p><strong>Total price for the apartment: x€</strong></p>
+                    <p><strong>Total paint needed: x liters</strong></p>
                 </div>
+            </fieldset>
         </div>
     )
+
 }
 
 export default Apartment;
