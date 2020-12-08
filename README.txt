@@ -1,4 +1,4 @@
-School project for selainohjelmointi-course
+Schoolproject for selainohjelmointi-course
 
 Collaborators:
 Karel Haapasalo
