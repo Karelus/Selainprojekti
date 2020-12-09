@@ -92,3 +92,15 @@ html {
 .costParagraph {
     font-style: italic;
 }
+
+.apartmentDiv {
+    padding: 10px;
+}
+
+.apartmentFieldset {
+    border: none;
+    background-color: #addeff;
+    padding: 10px;
+    padding-bottom: 10px;
+}
+

@@ -37,8 +37,8 @@ const Apartment = ({ name, rooms, paint }) => {
     }
 
     return (
-        <div>
-            <fieldset>
+        <div className="apartmentDiv">
+            <fieldset className="apartmentFieldset">
     <h3>{name} {getSquareMeters(rooms)}m2</h3>
                 <h4>Rooms:</h4>
                 <div className="rooms">
