@@ -84,3 +84,11 @@ html {
 .rootContainer {
     text-align: center;
 }
+
+.apartmentHeader {
+    color: rgb(114, 17, 17)
+}
+
+.costParagraph {
+    font-style: italic;
+}

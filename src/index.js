@@ -54,7 +54,7 @@ function Form() {
                 <label>
                     <p>Number of layers applied: </p>
                     <select name="count" className="selectMenu" onChange={handleChange}>
-                        <option value="">--Valitse määrä--</option>
+                        <option value="">--Choose Amount--</option>
                         <option value="1">1</option>
                         <option value="2">2</option>
                         <option value="3">3</option>
