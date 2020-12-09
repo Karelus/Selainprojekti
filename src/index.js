@@ -41,15 +41,15 @@ function Form() {
             <form onSubmit={handleSubmit}>
                 <label>
                     <p>Paint name: </p>
-                    <input name="name" onChange={handleChange} />
+                    <input name="name" required="required" onChange={handleChange} />
                 </label>
                 <label>
                     <p>Price of paint (€/l): </p>
-                    <input name="price" onChange={handleChange} />
+                    <input name="price" required="required" onChange={handleChange} />
                 </label>
                 <label>
                     <p>Paint abundance (m2/l): </p>
-                    <input name="coverage" onChange={handleChange} />
+                    <input name="coverage" required="required" onChange={handleChange} />
                 </label>
                 <label>
                     <p>Number of layers applied: </p>
