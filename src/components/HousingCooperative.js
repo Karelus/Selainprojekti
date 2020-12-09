@@ -35,8 +35,12 @@ const HousingCooperative = ({ apartments = [], paint }) => {
                 })}
             </div>
             <div>
-                <h3>Total price for the Housing Cooperative: {getTotalPrice(apartments, paint)}€</h3>
-                <h3>Total liters needed for the Housing Cooperative: {getTotalLiters(apartments, paint)} liters</h3>
+                <h3>
+                    Total price for the Housing Cooperative: {Math.round((getTotalPrice(apartments, paint) * 100) / 100)}€
+                </h3>
+                <h3>
+                    Total liters of {paint.paintName} needed for the Housing Cooperative: {Math.round((getTotalLiters(apartments, paint) * 100) / 100)} liters
+                </h3>
             </div>
         </section>
     )
