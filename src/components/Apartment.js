@@ -37,9 +37,9 @@ const Apartment = ({ name, rooms, paint }) => {
     }
 
     return (
-        <div className="apartmentDiv">
-            <fieldset className="apartmentFieldset">
-    <h3>{name} {getSquareMeters(rooms)}m2</h3>
+        <div>
+            <fieldset>
+    <h3>{name} {getSquareMeters(rooms)}m<sup>2</sup></h3>
                 <h4>Rooms:</h4>
                 <div className="rooms">
                     {rooms.map((room, i) => {
