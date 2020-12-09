@@ -26,10 +26,20 @@ const Apartment = ({ name, rooms, paint }) => {
         return totalLetersNeeded;
     }
 
+    function getSquareMeters(rooms) {
+        let totalSquareMeters = 0;
+
+        rooms.forEach((element) => {
+            totalSquareMeters += element.size;
+        });
+
+        return totalSquareMeters;
+    }
+
     return (
         <div>
             <fieldset>
-                <h3>{name}</h3>
+    <h3>{name} {getSquareMeters(rooms)}m2</h3>
                 <h4>Rooms:</h4>
                 <div className="rooms">
                     {rooms.map((room, i) => {
