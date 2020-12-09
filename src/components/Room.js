@@ -10,7 +10,7 @@ const Room = ( { name, size, typeFactor, paintName, paintPrice,
     return (
         <div>
             <p>
-                {name} with a size of {size}m2 demands {Math.round(totalLitersNeeded * 100) / 100} liters of paint
+                {name} with a size of {size}m<sup>2</sup> demands {Math.round(totalLitersNeeded * 100) / 100} liters of paint
             </p>
             <p className="costParagraph">Cost: {Math.round((totalCost * 100) / 100)}€</p>
         </div>

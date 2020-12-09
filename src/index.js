@@ -48,7 +48,7 @@ function Form() {
                     <input name="price" required="required" onChange={handleChange} />
                 </label>
                 <label>
-                    <p>Paint abundance (m2/l): </p>
+                    <p>Paint abundance (m<sup>2</sup>/l): </p>
                     <input name="coverage" required="required" onChange={handleChange} />
                 </label>
                 <label>
