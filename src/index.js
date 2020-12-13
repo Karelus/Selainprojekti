@@ -36,7 +36,7 @@ function Form() {
     return (
         <div className="wrapper">
             <h1>Paint Price and Liter Counter</h1>
-            <h2>Paint Information:</h2>
+            <h2>Paint Details:</h2>
             <br></br>
             <br></br>
 
