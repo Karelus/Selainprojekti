@@ -35,22 +35,27 @@ function Form() {
 
     return (
         <div className="wrapper">
-            <h1>Counter for paint price and liters</h1>
-            <h2>Add paint info:</h2>
+            <h1>Paint Price and Liter Counter</h1>
+            <h2>Paint Information:</h2>
+            <br></br>
+            <br></br>
 
             <form onSubmit={handleSubmit}>
                 <label>
                     <p>Paint name: </p>
                     <input name="name" required="required" onChange={handleChange} />
                 </label>
+                <br></br>
                 <label>
                     <p>Price of paint (€/l): </p>
                     <input name="price" required="required" onChange={handleChange} />
                 </label>
+                <br></br>
                 <label>
                     <p>Paint abundance (m<sup>2</sup>/l): </p>
                     <input name="coverage" required="required" onChange={handleChange} />
                 </label>
+                <br></br>
                 <label>
                     <p>Number of layers applied: </p>
                     <select name="count" className="selectMenu" onChange={handleChange}>
@@ -58,9 +63,10 @@ function Form() {
                         <option value="1">1</option>
                         <option value="2">2</option>
                         <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
                     </select>
                 </label>
-                <br></br>
                 <br></br>
                 <button type="submit>" className="submitButton">Submit</button>
             </form>

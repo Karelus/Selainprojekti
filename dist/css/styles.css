@@ -11,14 +11,14 @@ input {
     padding:10px;
     border:none;
     background-color:#3F51B5;
-    color:rgb(255, 255, 255);
+    color:#ffffff;
     font-weight:600;
     border-radius:5px;
 }
 
 h1 {
     font-family: "Times New Roman", Times, serif;
-    color: rgb(155, 0, 0);
+    color: #a70000;
     padding: 5px;
     text-align: center;
     background: #addeff;
