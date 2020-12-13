@@ -42,6 +42,12 @@ const HousingCooperative = ({ apartments = [], paint }) => {
                     Total liters of {paint.paintName} needed for the Housing Cooperative: {Math.round((getTotalLiters(apartments, paint) * 100) / 100)} liters
                 </h3>
             </div>
+            <div>
+                <br></br>
+                <h6>
+                    That doesn't seem too bad, go for it!
+                </h6>
+            </div>
         </section>
     )
 };
