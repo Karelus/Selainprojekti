@@ -11,12 +11,14 @@ const formReducer = (state, event) => {
     }
 }
 
+// for the paint data inputted by user
 function Form() {
     const [formData, setFormData] = useReducer(formReducer, {});
 
     const handleSubmit = event => {
         event.preventDefault();
 
+        // paint is passed on to the components
         var paint = {
             paintName: event.target.name.value,
             paintPrice: event.target.price.value,
@@ -74,6 +76,8 @@ function Form() {
     )
 }
 
+// triggered when user submits, renders HousingCooperative to "result-root" div
+// apartments data and paint data passed on to the component as props
 function renderResults(paint) {
     ReactDOM.render(<HousingCooperative apartments={data} paint={paint} />, document.getElementById("result-root"));
 }

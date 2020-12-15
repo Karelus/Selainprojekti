@@ -3,6 +3,7 @@ import Apartment from "./Apartment";
 
 const HousingCooperative = ({ apartments = [], paint }) => {
 
+    // calculates total price by multiplying total liters with paint price per liter
     function getTotalPrice(apartments, paint) {
         let paintPrice = paint.paintPrice;
         let totalLitersNeeded = getTotalLiters(apartments, paint);
@@ -11,6 +12,7 @@ const HousingCooperative = ({ apartments = [], paint }) => {
         return totalPrice;
     }
 
+    // calculates total liters needed based on total amount of squaremeters 
     function getTotalLiters(apartments, paint) {
         let paintCount = paint.paintCount;
         let totalSquareMeters = 0;

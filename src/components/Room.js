@@ -3,6 +3,7 @@ import React from "react";
 const Room = ( { name, size, typeFactor, paintName, paintPrice, 
     paintCoverage, paintCount, } ) => {
 
+    // calculations for total liters and total cost
     var totalSquareMeters = (size * typeFactor) * paintCount;
     var totalLitersNeeded = totalSquareMeters / paintCoverage;
     var totalCost = totalLitersNeeded * paintPrice;

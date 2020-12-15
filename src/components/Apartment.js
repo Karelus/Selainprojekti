@@ -4,6 +4,7 @@ import Room from "./Room";
 // make the apartment element here
 const Apartment = ({ name, rooms, paint }) => {
 
+    // calculates total price by multiplying total liters with paint price per liter
     function getTotalPrice(rooms, paint) {
         let paintPrice = paint.paintPrice;
         let totalLetersNeeded = getTotalLiters(rooms, paint);
@@ -12,6 +13,7 @@ const Apartment = ({ name, rooms, paint }) => {
         return totalPrice;
     }
 
+    // calculates total liters needed based on total amount of squaremeters
     function getTotalLiters(rooms, paint) {
         let paintCount = paint.paintCount;
         let totalSquareMeters = 0;
