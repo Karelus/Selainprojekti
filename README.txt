@@ -1,4 +1,7 @@
-Schoolproject for selainohjelmointi-course
+# Schoolproject for selainohjelmointi-course
+
+Paint price  and amount calculator
+made with React, HTML, CSS
 
 Collaborators:
 Karel Haapasalo
